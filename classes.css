@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:ital@0;1&display=swap');
 
 html,
 body {
@@ -24,6 +24,7 @@ button {
   border-radius: 6px;
   cursor: pointer;
   margin-left: auto;
+  box-shadow: 5px 5px rgba(0 0 0 / 76%);
 }
 
 input {
@@ -66,7 +67,7 @@ tr:nth-child(even) {
 }
 
 .form-add::before {
-  content: "";
+  content: '';
   height: 3px;
   width: 8rem;
   margin: 0 auto;
