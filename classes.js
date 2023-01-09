@@ -49,7 +49,7 @@ const Book = class {
 
       elementBook.textContent = `"${book.title}" by ${book.author}`;
 
-      bookDiv.classList.add('book-container');
+      bookDiv.classList.add('container-book');
       bookDiv.appendChild(elementBook);
       bookDiv.appendChild(deleteBtn);
 

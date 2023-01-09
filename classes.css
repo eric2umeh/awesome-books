@@ -15,14 +15,15 @@ ul {
 }
 
 button {
+  display: flex;
   background: #dd8a6f91;
   color: #fff;
-  font-weight: bold;
   letter-spacing: 1px;
   padding: 0.4rem;
-  border: none;
+  border: 0.2rem #333 solid;
   border-radius: 6px;
   cursor: pointer;
+  margin-left: auto;
 }
 
 input {
@@ -30,10 +31,17 @@ input {
   width: 100%;
   border: 0.125rem #333 solid;
   border-radius: 0.25rem;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+input:focus,
+input:active {
+  border: 2px #333 solid;
 }
 
 tr:nth-child(even) {
-  background-color: green;
+  background-color: lightgray;
 }
 
 .book-list {
@@ -42,6 +50,13 @@ tr:nth-child(even) {
   width: 50%;
   margin: 0 auto;
   margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+.container-book {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 
 .title,
