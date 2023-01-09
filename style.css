@@ -1,0 +1,17 @@
+main {
+  padding: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
