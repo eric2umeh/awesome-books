@@ -4,9 +4,6 @@
 
 <div align="center">
 
-  <img src="logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Awesome Books</b></h3>
 
 </div>
@@ -34,6 +31,7 @@
 **[Javascript Course: Awesome Books]** In this course, we would add, list, store and remove books using ES6.
 
 ## 🛠 Built With <a name="built-with"></a>
+
     Javascript (ES6)
     HTML5
     CSS3
@@ -81,15 +79,17 @@ Clone this repository to your desired folder:
 
 <!-- Authors -->
 
-👤 **Author**
+👤 **Eric Umeohabike**
 
 - GitHub: [@Eric2umeh](https://github.com/eric2umeh)
 - Twitter: [@Eric Umeohabike](https://twitter.com/king_eric_)
 - LinkedIn: [Eric Umeohabike](https://www.linkedin.com/in/eric-umeohabike-4a510ba4/)
 
-👤 **Author**
+👤 **kayode Olatunji**
 
-- GitHub: [@](https://github.com/)
+- GitHub: [@githubhandle](https://github.com/Jolak5)
+- Twitter: [@twitterhandle](https://twitter.com/I_amBabakay)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/olatunji-kayode/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
