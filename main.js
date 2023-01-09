@@ -1,4 +1,4 @@
-const listBooks = document.querySelector('.bookList');
+const bookList = document.querySelector('.bookList');
 const form = document.querySelector('.formInput');
 const [title, author] = form.elements;
 
@@ -33,7 +33,7 @@ function removeBook(book) {
 }
 
 const displayBooks = () => {
-  listBooks.innerHTML = '';
+  bookList.innerHTML = '';
   books.map((book) => {
     const divBook = document.createElement('div');
     const titleBook = document.createElement('p');
@@ -50,13 +50,13 @@ const displayBooks = () => {
     divBook.appendChild(delButton);
     divBook.appendChild(hrTag);
 
-    listBooks.appendChild(divBook);
+    bookList.appendChild(divBook);
 
     delButton.addEventListener('click', () => {
       removeBook(book);
-      listBooks.removeChild(divBook);
+      bookList.removeChild(divBook);
     });
-    return listBooks;
+    return bookList;
   });
 };
 
