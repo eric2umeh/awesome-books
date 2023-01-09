@@ -67,7 +67,6 @@ const Book = class {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   Book.addBook(new Book(inputBook.title, inputBook.author));
-  form.submit();
 });
 
 Book.displayBooks();
