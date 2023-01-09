@@ -1,5 +1,5 @@
-const listBooks = document.querySelector('.bookList');
-const form = document.querySelector('.formInput');
+const listBooks = document.querySelector('.book-list');
+const form = document.querySelector('.form-input');
 const [title, author] = form.elements;
 
 const inputBook = {};
