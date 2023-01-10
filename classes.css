@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:ital@0;1&display=swap");
 
 html,
 body {
@@ -23,6 +23,10 @@ header {
   align-items: center;
   padding: 10px;
   height: 30px;
+}
+
+ul {
+  list-style: none;
 }
 
 #navbar ul {
@@ -50,15 +54,6 @@ header {
 #navbar a {
   text-decoration: none;
   color: black;
-}
-
-#current-date {
-  float: right;
-}
-
-ul {
-  list-style: none;
-  width: 15%;
 }
 
 #awesome-book {
@@ -112,6 +107,10 @@ input {
   font-size: 1.7rem;
 }
 
+ul li input {
+  width: 80%;
+}
+
 input:focus,
 input:active {
   border: 2px #333 solid;
@@ -144,7 +143,7 @@ tr:nth-child(even) {
 }
 
 .contact-info {
-  display: flex;
+  display: none;
   flex-direction: column;
   margin-top: 70px;
   justify-content: center;
@@ -152,15 +151,14 @@ tr:nth-child(even) {
 }
 
 .contact-p {
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 .contact-list {
   list-style: circle;
   justify-content: center;
-  font-size: 2rem;
-  width: 35%;
+  font-size: 1rem;
 }
 
 footer {
