@@ -8,9 +8,15 @@ const contactInfoButton = document.getElementById('contact-info-buttons');
 const switchMode = (node) => {
   if (showListButton !== node && showListButton.classList.contains('active')) {
     showListButton.classList.remove('active');
-  } else if (addNewButton !== node && addNewButton.classList.contains('active')) {
+  } else if (
+    addNewButton !== node &&
+    addNewButton.classList.contains('active')
+  ) {
     addNewButton.classList.remove('active');
-  } else if (contactInfoButton !== node && contactInfoButton.classList.contains('active')) {
+  } else if (
+    contactInfoButton !== node &&
+    contactInfoButton.classList.contains('active')
+  ) {
     contactInfoButton.classList.remove('active');
   }
   node.classList.add('active');
@@ -44,6 +50,9 @@ contactInfoButton.addEventListener('click', (event) => {
   awesomeBooksSection.style.display = 'none';
   inputFormSection.style.display = 'none';
 });
+
+document.getElementById('current-date').innerHTML = new Date().toLocaleString();
+document.getElementById('year').innerHTML = new Date().getFullYear();
 
 const listBooks = document.querySelector('.book-list');
 const form = document.querySelector('.form-input');

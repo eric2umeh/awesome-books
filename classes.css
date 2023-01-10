@@ -9,8 +9,6 @@ body {
   color: #333;
 }
 
-
-
 header {
   position: fixed;
   right: 0;
@@ -34,6 +32,14 @@ header {
   align-items: center;
 }
 
+.active {
+  color: #dd8a6f91 !important;
+}
+
+#current-date {
+  float: right;
+}
+
 .line {
   width: 3px;
   height: 20px;
@@ -52,13 +58,13 @@ header {
 
 ul {
   list-style: none;
-  /* padding: 0; */
+  width: 15%;
 }
 
 #awesome-book {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 40vh;
   flex-direction: column;
   margin: 0 10%;
   align-items: center;
@@ -69,8 +75,6 @@ ul {
   border: 0.125rem solid #333;
   border-radius: 0.25rem;
   width: 50%;
-  /* margin: 0 auto; */
-  /* margin-bottom: 4rem; */
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -87,12 +91,15 @@ button {
   cursor: pointer;
   margin-left: auto;
   box-shadow: 5px 5px rgba(0 0 0 / 76%);
+  font-size: 1.7rem;
 }
 
 #input-forms {
-  height: 100vh;
   display: none;
   justify-content: center;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-top: 50px;
 }
 
 input {
@@ -102,6 +109,7 @@ input {
   border-radius: 0.25rem;
   outline: none;
   margin-bottom: 10px;
+  font-size: 1.7rem;
 }
 
 input:focus,
@@ -123,17 +131,43 @@ tr:nth-child(even) {
 .form-add {
   text-align: center;
   color: #dd8a6f91;
+  margin-top: 80px;
+  font-size: 3rem;
 }
 
 .form-input {
-  /* margin: 0 auto; */
-  /* max-width: 16rem; */
-  /* box-sizing: border-box; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 2rem;
+}
 
-  /* width: 250px; */
+.contact-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  margin-top: 70px;
   justify-content: center;
+  align-items: center;
+}
+
+.contact-p {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.contact-list {
+  list-style: circle;
+  justify-content: center;
+  font-size: 2rem;
+  width: 35%;
+}
+
+footer {
+  border: 3px solid #333;
+  margin: 10px 10%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
