@@ -1,3 +1,50 @@
+const inputFormSection = document.getElementById('input-forms');
+const awesomeBooksSection = document.getElementById('awesome-book');
+const showListButton = document.getElementById('show-list-buttons');
+const addNewButton = document.getElementById('add-new-button');
+const contactInfoSection = document.getElementById('contact-infos');
+const contactInfoButton = document.getElementById('contact-info-buttons');
+
+const switchMode = (node) => {
+  if (showListButton !== node && showListButton.classList.contains('active')) {
+    showListButton.classList.remove('active');
+  } else if (addNewButton !== node && addNewButton.classList.contains('active')) {
+    addNewButton.classList.remove('active');
+  } else if (contactInfoButton !== node && contactInfoButton.classList.contains('active')) {
+    contactInfoButton.classList.remove('active');
+  }
+  node.classList.add('active');
+};
+
+const showBooksList = () => {
+  switchMode(showListButton);
+  awesomeBooksSection.style.display = 'flex';
+
+  contactInfoSection.style.display = 'none';
+  inputFormSection.style.display = 'none';
+};
+
+showListButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  showBooksList();
+});
+
+addNewButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  switchMode(addNewButton);
+  inputFormSection.style.display = 'flex';
+  awesomeBooksSection.style.display = 'none';
+  contactInfoSection.style.display = 'none';
+});
+
+contactInfoButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  switchMode(contactInfoButton);
+  contactInfoSection.style.display = 'flex';
+  awesomeBooksSection.style.display = 'none';
+  inputFormSection.style.display = 'none';
+});
+
 const listBooks = document.querySelector('.book-list');
 const form = document.querySelector('.form-input');
 const [title, author] = form.elements;
