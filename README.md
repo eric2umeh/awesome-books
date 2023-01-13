@@ -32,7 +32,7 @@
 
 ## 🛠 Built With <a name="built-with"></a>
 
-    Javascript (ES6)
+    Javascript
     HTML5
     CSS3
 
